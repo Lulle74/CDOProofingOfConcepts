@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_QBKWQDS-EeeraY2aMr5xdw" elementId="com.example.e4.rcp.todo.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_lEC6MDS-EeeraY2aMr5xdw" elementId="com.example.e4.rcp.todo.trimmedwindow.taskmanager" label="Das Fenster" x="100" y="100" width="800" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_Br7gYDVeEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_HhVNgDVeEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.perspective.todo" label="To-Do">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_OS95oDS_EeeraY2aMr5xdw" elementId="com.example.e4.rcp.todo.partsashcontainer.main" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_ZY99sDS_EeeraY2aMr5xdw" elementId="com.example.e4.rcp.todo.partstack.0">
+            <children xsi:type="advanced:Placeholder" xmi:id="_dI6VIFpZEeeBGdUwpQ922g" elementId="com.example.e4.rcp.todo.part.overview.ph" ref="_TR1DkFsPEeeJdtsTWWhzrw"/>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_clkckDS_EeeraY2aMr5xdw" elementId="com.example.e4.rcp.todo.partsashcontainer.0">
+            <children xsi:type="basic:PartStack" xmi:id="_dh7XIDS_EeeraY2aMr5xdw" elementId="com.example.e4.rcp.todo.partstack.1">
+              <children xsi:type="basic:Part" xmi:id="_t4c5oDS_EeeraY2aMr5xdw" elementId="com.example.e4.rcp.todo.part.tododetails" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.parts.TodoDetailsPart" label="Server connection"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_d7zPsDS_EeeraY2aMr5xdw" elementId="com.example.e4.rcp.todo.partstack.2">
+              <children xsi:type="basic:Part" xmi:id="_vJLhsDS_EeeraY2aMr5xdw" elementId="com.example.e4.rcp.todo.part.playground" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.parts.PlaygroundPart" label="Playground">
+                <menus xmi:id="_arcLkDVWEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.menu.viewmeu" label="ViewMeu">
+                  <tags>ViewMenu</tags>
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_cdHkkDVWEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handledmenuitem.viewmenuitem1" label="ViewMenuItem1"/>
+                  <children xsi:type="menu:MenuSeparator" xmi:id="_eZFiADVWEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.menuseparator.0"/>
+                  <children xsi:type="menu:HandledMenuItem" xmi:id="_flr4ADVWEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handledmenuitem.viewmenuitem2" label="ViewMenuItem2" command="_hRXhQDVXEeeln7M-uMr4ow"/>
+                  <children xsi:type="menu:DirectMenuItem" xmi:id="__bsnUDVWEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.directmenuitem.direkten" label="Direkten" tooltip="tolle!" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.parts.items.DirectMenuItem"/>
+                </menus>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_gb_boDVbEeeln7M-uMr4ow" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_oajNoDVbEeeln7M-uMr4ow" elementId="org.eclipse.ui.file.menu" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Uwu6ADlvEeefkoFHAbLdEg" elementId="com.example.e4.rcp.todo.handledmenuitem.new" label="New" command="_fgzKUDlvEeefkoFHAbLdEg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_1PA-oDVbEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handledmenuitem.save" label="Save" command="_Vb0IMDVaEeeln7M-uMr4ow"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_-lRjYDVbEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.menuseparator.1"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="__N8F4DVbEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handledmenuitem.exit" label="Exit" command="_Yip9UDVaEeeln7M-uMr4ow"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_zU7U4DV5EeeDVMnhb4TaCg" elementId="com.example.e4.rcp.todo.menu.window" label="Window">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_LFvzkDYbEee0_qpDlCVa_w" elementId="com.example.e4.rcp.todo.handledmenuitem.createnewwindow" label="Create New Window" command="_JTmjsDYfEee0_qpDlCVa_w"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_B0q-kFc9EeezFsGjJvHXyg" elementId="com.example.e4.rcp.todo.handledmenuitem.resetperspective" label="Reset Perspective" iconURI="platform:/plugin/elundstrom.cdo.client.ui/icons/stopwatch_green16x16.png" command="_LNDqQFc9EeezFsGjJvHXyg"/>
+      </children>
+    </mainMenu>
+    <sharedElements xsi:type="basic:Part" xmi:id="_TR1DkFsPEeeJdtsTWWhzrw" elementId="com.example.e4.rcp.todo.part.overview" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.parts.LibraryPart" label="Library" closeable="true">
+      <handlers xmi:id="_1oAmIHRtEei0vtxZ3NarqQ" elementId="elundstrom.cdo.client.ui.handler.deleteElement" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.parts.handlers.DeleteElementHandler" command="_y6XUIHRtEei0vtxZ3NarqQ"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_vygE4DVWEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.popupmenu.table" label="Table Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_wx5FUDVWEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handledmenuitem.remove" label="Remove" command="_y6XUIHRtEei0vtxZ3NarqQ"/>
+      </menus>
+      <toolbar xmi:id="_XwK3IFsPEeeJdtsTWWhzrw" elementId="com.example.e4.rcp.todo.toolbar.0">
+        <children xsi:type="menu:DirectToolItem" xmi:id="_fCaI0DV3EeeDVMnhb4TaCg" elementId="com.example.e4.rcp.todo.directtoolitem.item2" label="item2" iconURI="platform:/plugin/elundstrom.cdo.client.ui/icons/stopwatch_red16x16.png" tooltip="item2 tooltip" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.parts.items.OverViewToolbarDirectItem">
+          <menu xmi:id="_6uWO8DV4EeeDVMnhb4TaCg" elementId="com.example.e4.rcp.todo.menu.0"/>
+        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8EsrwDVVEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handledtoolitem.littletoolitem" label="LittleToolItem" iconURI="platform:/plugin/elundstrom.cdo.client.ui/icons/stopwatch_green16x16.png" tooltip="tippen"/>
+        <children xsi:type="menu:ToolControl" xmi:id="_zM66UDV3EeeDVMnhb4TaCg" elementId="com.example.e4.rcp.todo.toolcontrol.littleToolControl" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.parts.items.SearchTooIItem"/>
+      </toolbar>
+    </sharedElements>
+    <trimBars xmi:id="_wGz5QDVcEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.trimbar.top">
+      <children xsi:type="menu:ToolControl" xmi:id="_TFICADV4EeeDVMnhb4TaCg" elementId="com.example.e4.rcp.todo.toolcontrol.0" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.parts.items.SearchTooIItem"/>
+    </trimBars>
+    <trimBars xmi:id="_CftjMDVdEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.trimbar.0" side="Bottom">
+      <children xsi:type="menu:ToolBar" xmi:id="_D596sDVdEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.toolbar.2">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Gv2isDVdEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handledtoolitem.other" label="Other"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_SPFmIDVdEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.toolbarseparator.0"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_S64VIDVdEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handledtoolitem.exit" label="Exit" command="_Yip9UDVaEeeln7M-uMr4ow"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_28X1IDVXEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handler.0" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.parts.handlers.MyCoolCommandHandler" command="_hRXhQDVXEeeln7M-uMr4ow"/>
+  <handlers xmi:id="_9KEmIDVaEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handler.saveall" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.handlers.SaveAllHandler" command="_Vb0IMDVaEeeln7M-uMr4ow"/>
+  <handlers xmi:id="_Coq80DVbEeeln7M-uMr4ow" elementId="com.example.e4.rcp.todo.handler.exit" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.handlers.ExitHandler" command="_Yip9UDVaEeeln7M-uMr4ow"/>
+  <handlers xmi:id="_Nfn4MDYfEee0_qpDlCVa_w" elementId="com.example.e4.rcp.todo.handler.newwindow" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.handlers.NewWindowHandler" command="_JTmjsDYfEee0_qpDlCVa_w"/>
+  <handlers xmi:id="_ll9KsDlvEeefkoFHAbLdEg" elementId="com.example.e4.rcp.todo.handler.1" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.handlers.NewFileHandler" command="_fgzKUDlvEeefkoFHAbLdEg"/>
+  <handlers xmi:id="_OVLRwFc9EeezFsGjJvHXyg" elementId="com.example.e4.rcp.todo.handler.2" contributionURI="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.handlers.ResetPerspectiveHandler" command="_LNDqQFc9EeezFsGjJvHXyg"/>
+  <commands xmi:id="_hRXhQDVXEeeln7M-uMr4ow" elementId="elundstrom.cdo.client.ui.command.mycoolcommand" commandName="MyCoolCommand"/>
+  <commands xmi:id="_Vb0IMDVaEeeln7M-uMr4ow" elementId="org.eclipse.ui.file.saveAll" commandName="Save"/>
+  <commands xmi:id="_Yip9UDVaEeeln7M-uMr4ow" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
+  <commands xmi:id="_JTmjsDYfEee0_qpDlCVa_w" elementId="elundstrom.cdo.client.ui.command.newwindow" commandName="NewWindow"/>
+  <commands xmi:id="_fgzKUDlvEeefkoFHAbLdEg" elementId="org.eclipse.ui.file.new" commandName="New"/>
+  <commands xmi:id="_LNDqQFc9EeezFsGjJvHXyg" elementId="elundstrom.cdo.client.ui.command.resetperspective" commandName="Reset Perspective"/>
+  <commands xmi:id="_y6XUIHRtEei0vtxZ3NarqQ" elementId="elundstrom.cdo.client.ui.command.removemodelelement" commandName="Delete element"/>
+  <addons xmi:id="_QBKWQTS-EeeraY2aMr5xdw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_QBKWQjS-EeeraY2aMr5xdw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_QBKWQzS-EeeraY2aMr5xdw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_QBKWRDS-EeeraY2aMr5xdw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_QBKWRTS-EeeraY2aMr5xdw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_QBKWRjS-EeeraY2aMr5xdw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_QBKWRzS-EeeraY2aMr5xdw" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>

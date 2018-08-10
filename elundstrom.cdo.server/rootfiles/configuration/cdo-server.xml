@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdoServer>
+
+ <acceptor type="tcp" listenAddr="0.0.0.0" port="2036"/>
+
+  <repository name="marcus">
+  	 <property name="supportingAudits" value="true"/>
+	<property name="connectionKeepAlivePeriod" value="60"/>
+	<property name="readerPoolCapacity" value="20"/>
+	<property name="writerPoolCapacity" value="20"/>
+	
+	<store type="db">
+           <mappingStrategy type="horizontal"> <!-- callout -->
+        		<property name="qualifiedNames" value="true"/>
+        		<property name="withRanges" value="false"/>
+			</mappingStrategy>
+			
+			<dbAdapter name="h2"/>
+      		<dataSource class="org.h2.jdbcx.JdbcDataSource"
+        		URL="jdbc:h2:/develop/cdo-master/h2/biggusdickus;LOCK_TIMEOUT=10000;TRACE_LEVEL_FILE=0"/>
+        
+        	<!-- 
+            <dbAdapter name="mysql"/>
+            <dataSource
+                class="com.mysql.jdbc.jdbc2.optional.MysqlDataSource"
+                url="jdbc:mysql://localhost/cdotest?createDatabaseIfNotExist=true"
+                user="root"
+                password="admin"
+                />  -->
+    </store>
+  </repository>
+
+</cdoServer>

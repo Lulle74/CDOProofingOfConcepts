@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="MyCDOClientApp">
+         <property
+               name="appName"
+               value="MyCDOClientApp">
+         </property>
+          <property
+             name="lifeCycleURI"
+             value="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.internal.E4LifeCycle"/>
+          <property
+             name="modelResourceHandler"
+             value="bundleclass://elundstrom.cdo.client.ui/elundstrom.cdo.client.ui.internal.AviXResourceHandler"/>
+      </product>
+   </extension>
+   
+   <extension
+      id="MainAppModel"
+      point="org.eclipse.e4.workbench.model">
+      <processor
+      		beforefragment="false"
+            class="elundstrom.cdo.client.ui.internal.ModelProcessor">
+      </processor>
+	</extension>
+
+</plugin>
