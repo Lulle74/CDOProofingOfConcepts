@@ -1,0 +1,2 @@
+Detta var ursprungligen nåt "test-projekt" från CDO-repot som jag plockade ut. Det är väl en testprodukt för server, helt enkelt. 
+Projektet hette "org.eclipse.emf.cdo.server.product" (tror även en sån finns med i distron för Photon om man kollar)
